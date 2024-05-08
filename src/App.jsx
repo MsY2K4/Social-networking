@@ -1,13 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import AuthPage from "./pages/AuthPage/AuthPage";
+import PageLayout from "./Layouts/PageLayout/PageLayout";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
+
 function App() {
-
-  return (
-<>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolore? Voluptatum reiciendis, quasi et, mollitia quibusdam quod dolorem impedit ea, similique repellendus temporibus perspiciatis eius reprehenderit ab qui odit error?
-
-</>
-);
+	return (
+		<PageLayout>
+			<Routes>
+				<Route path='/' element={<HomePage />} />
+				<Route path='/auth' element={<AuthPage />} />
+				<Route path='/:username' element={<ProfilePage />} />
+			</Routes>
+		</PageLayout>
+	);
 }
 
-
-export default App
+export default App;
