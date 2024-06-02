@@ -1,7 +1,7 @@
 // Importing necessary components from Chakra UI and your custom components
 import { Box, Container, Flex } from "@chakra-ui/react";
-import FeedPosts from "../../components/FeedPosts/FeedPosts";
-import SuggestedUsers from "../../components/SuggestedUsers/SuggestedUsers";
+import FeedPosts from "../../Components/FeedPosts/FeedPosts";
+import SuggestedUsers from "../../Components/SuggestedUsers/SuggestedUsers";
 
 // Defining the HomePage component
 const HomePage = () => {

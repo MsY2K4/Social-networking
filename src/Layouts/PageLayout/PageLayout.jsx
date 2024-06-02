@@ -1,6 +1,6 @@
 // Importing necessary components from Chakra UI and React Router
 import { Box, Flex } from "@chakra-ui/react";
-import Sidebar from "../../components/Sidebar/Sidebar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 import { useLocation } from "react-router-dom";
 
 // Defining the PageLayout component
